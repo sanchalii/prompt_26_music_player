@@ -1,0 +1,192 @@
+*
+{
+margin:0%;
+padding:0%;
+box-sizing:border-box;
+}
+html,body{
+width:100%;
+height:100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(forest-5855196_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+}
+nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px white;
+}
+.div{
+    height: 90%;
+    width: 20%;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+.div>h2{
+    transition:  500ms;
+}
+.div>h2:hover{
+    color: rgb(5, 9, 253);
+}
+.options{
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav1{
+    transition: 500ms ;
+}
+.nav1:hover{
+    color: rgb(5, 9, 253);
+}
+input{
+    width: 10%;
+    height: 50%;
+    border-radius: 20px;
+    text-align: center;
+}
+.accout{
+    height: 90%;
+    width: 7%;
+}
+.accout>img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+main{
+    
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+
+}
+.song-player{
+    width: 40%;
+    height: 90%;
+    
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container{
+    width: 75%;
+    height: 85%;
+   
+    transition: transform 1000ms;
+    transition-delay:  20000ms;
+    perspective: 1000px;
+    border-radius: 20px;
+    
+}
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card{
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.front,.back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+
+}
+.front>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center ;
+    border-radius: 20px;
+}
+.back{
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.back>img{
+    width: 80%;
+    height: 40%;
+    box-shadow: 0px 0px 20px white;
+}
+.back>.names{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.names>p{
+    margin-top: 10px;
+    text-align: center;
+}
+.song-list{
+    width: 60%;
+    height: 90%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(7, 7, 7,0.8);
+    color: white;
+
+}
+.song-list>.rows{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    border-bottom: 1px solid white;
+    justify-content: center;
+    transition: 500ms ease-out;
+}
+.rows:hover{
+    background-color: rgba(5, 9, 253, 0.8);
+}
+.rows>.left{
+    width: 50%;
+    height: 100%;
+}
+.rows>.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
